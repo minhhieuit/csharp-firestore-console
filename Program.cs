@@ -13,7 +13,7 @@ namespace TestFirebase
         {
             FirestoreDb db = InitDb("blazor-assembly-firebase");
 
-            // await AddDataAsync(db);
+            await AddDataAsync(db);
 
             await RetrieveAllDocuments(db);
             Console.ReadLine();
@@ -36,6 +36,7 @@ namespace TestFirebase
             {
                 { "First", "Jacky" },
                 { "Last", "Nguyen" },
+                { "Middle", "Minh" },
                 { "Born", 1991 }
             };
 
